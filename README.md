@@ -2,9 +2,6 @@ Det här är projektet där vi gör DWWW-designernas nolla.nu sida till verkligh
 
 Länken till deras fantastiska figma [finns här](https://www.figma.com/file/aLITMG4D8MzdgmD7oxqqMu/nolla.nu?node-id=205%3A33)
 
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
