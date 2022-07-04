@@ -19,13 +19,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <BackgroundDigits />
+      <MobileOnly>
+        <HamburgerMenu />
+      </MobileOnly>
       <Container>
         <Component {...pageProps} />
       </Container>
       <TopBar />
-      <MobileOnly>
-        <HamburgerMenu />
-      </MobileOnly>
       <Footer />
     </>
   );
