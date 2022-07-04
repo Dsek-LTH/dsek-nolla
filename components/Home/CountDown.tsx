@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DESKTOP_MQ } from '../src/constants';
+import { DESKTOP_MQ } from '../../src/constants';
 
 const Container = styled.div`
   max-width: 40rem;
