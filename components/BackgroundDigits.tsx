@@ -11,6 +11,7 @@ const DigitsStyle = styled.p`
   left: 0;
   max-width: 390px;
   overflow: hidden;
+  pointer-events: none;
   ${DESKTOP_MQ} {
     max-height: 1250px;
     max-width: 25rem;

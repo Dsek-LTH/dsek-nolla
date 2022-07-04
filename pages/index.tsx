@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
 import CountDown from '../components/CountDown';
+import FAQ from '../components/FAQ';
 import Copy from '../components/Home/Copy';
 
 const Main = styled.main`
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <CountDown />
         <h1>hejsan nollan!</h1>
         <Copy />
+        <FAQ />
       </Main>
     </div>
   );
