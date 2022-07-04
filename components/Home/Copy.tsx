@@ -6,7 +6,6 @@ const CopyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 943px;
 `;
 
 const ScalingParagraph = styled.p`
