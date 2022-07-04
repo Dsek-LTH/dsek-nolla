@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
+import ConsoleEffect from '../components/ConsoleEffect';
 import CountDown from '../components/CountDown';
 import FAQ from '../components/FAQ';
 import Copy from '../components/Home/Copy';
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
 
       <Main>
         <CountDown />
-        <h1>hejsan nollan!</h1>
+        <ConsoleEffect Tag="h1" string="hejsan nollan!" />
         <Copy />
         <FAQ />
       </Main>
