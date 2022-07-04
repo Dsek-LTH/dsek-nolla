@@ -1,64 +1,66 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import { DESKTOP_MQ } from '../src/constants';
-import DsekIcon from './icons/DsekIcon';
+import BigDsekIcon from './icons/BigDsekIcon';
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
-  padding: 0 1rem;
+  padding: 1rem;
+  flex-direction: column;
   ${DESKTOP_MQ} {
+    flex-direction: row;
     padding: 1rem 2rem;
+    font-size: 20px;
   }
   background: rgb(53, 41, 48);
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 10;
+  justify-content: space-between;
+  line-height: 22px;
 `;
 
-const DesktopMenu = styled.div`
-  display: none;
+const ElectionInfo = styled.p`
   ${DESKTOP_MQ} {
-    display: flex;
-    width: 100%;
-    font-size: 1.5rem;
-    justify-content: space-around;
+    margin-top: 4rem;
   }
+  max-width: 39.5rem;
 `;
 
-const MenuItem = styled.div``;
+const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
-export default function MobileBar() {
+export default function Footer() {
   return (
-    <>
-      <Container>
+    <Container>
+      <IconContainer>
         <Link href="/">
           <a>
-            <DsekIcon />
+            <BigDsekIcon />
           </a>
         </Link>
-        <DesktopMenu>
-          <MenuItem>
-            <Link href="/">start</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/schema">schema&&karta</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/">boende</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/">sektionen</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/">packning</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/">studenthälsa</Link>
-          </MenuItem>
-        </DesktopMenu>
-      </Container>
-    </>
+      </IconContainer>
+
+      <ElectionInfo>
+        I år är det riksdagsval och valdagen infaller under nollningsperioden.
+        Vi ser jättegärna att så många nollor som möjligt förtidsröstar innan
+        nollningen men går inte detta kommer det finnas tid att infinna sig vid
+        en vallokal under dagen.
+        <br />
+        <br />
+        <a href="https://lund.se/kommun-och-politik/sa-kan-du-paverka/allmanna-val/val-2022">
+          &gt; mer information om valet
+        </a>
+      </ElectionInfo>
+      <ElectionInfo>
+        Har något hänt?
+        <br />
+        Anonymt anmälningsformulär:
+        <br />
+        <a href="https://bit.ly/tryggnollning22">
+          &gt; https://bit.ly/tryggnollning22
+        </a>
+      </ElectionInfo>
+    </Container>
   );
 }

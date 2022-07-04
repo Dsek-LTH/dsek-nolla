@@ -5,6 +5,8 @@ import HamburgerMenu from '../components/HamburgerMenu';
 import { MobileOnly } from '../components/components';
 import styled from 'styled-components';
 import { DESKTOP_MQ } from '../src/constants';
+import Footer from '../components/Footer';
+import BackgroundDigits from '../components/BackgroundDigits';
 
 const Container = styled.div`
   padding: 5rem 1rem;
@@ -16,6 +18,7 @@ const Container = styled.div`
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <BackgroundDigits />
       <Container>
         <Component {...pageProps} />
       </Container>
@@ -23,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <MobileOnly>
         <HamburgerMenu />
       </MobileOnly>
+      <Footer />
     </>
   );
 }
