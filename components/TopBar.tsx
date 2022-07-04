@@ -46,16 +46,16 @@ export default function MobileBar() {
             <Link href="/schema">schema&&karta</Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/">boende</Link>
+            <Link href="/boende">boende</Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/">sektionen</Link>
+            <Link href="/sektionen">sektionen</Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/">packning</Link>
+            <Link href="/packing">packning</Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/">studenthälsa</Link>
+            <Link href="/studenthalsa">studenthälsa</Link>
           </MenuItem>
         </DesktopMenu>
       </Container>
