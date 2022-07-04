@@ -1,4 +1,16 @@
 import styled from 'styled-components';
+import { DESKTOP_MQ } from '../src/constants';
+
+const Container = styled.div`
+  max-width: 40rem;
+`;
+
+const Label = styled.p`
+  font-size: 14px;
+  ${DESKTOP_MQ} {
+    font-size: 1rem;
+  }
+`;
 
 const LoadingBarBackground = styled.div`
   position: relative;
@@ -30,16 +42,16 @@ const loadingBarWidth =
 
 export default function CountDown() {
   return (
-    <div>
-      <p style={{ fontSize: 14 }}>
+    <Container>
+      <Label>
         &gt; loading &quot;nollning&quot;... {daysUntilNollning.toFixed()} dagar
         kvar...
-      </p>
+      </Label>
       <LoadingBarBackground>
         <LoadingBarForeground
           style={{ width: `${loadingBarWidth.toFixed()}%` }}
         />
       </LoadingBarBackground>
-    </div>
+    </Container>
   );
 }
