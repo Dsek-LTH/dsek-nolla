@@ -47,7 +47,7 @@ export default function MobileBar() {
           <DesktopMenuItem href="/schema" label="schema&&karta" />
           <DesktopMenuItem href="/boende" label="boende" />
           <DesktopMenuItem href="/sektionen" label="sektionen" />
-          <DesktopMenuItem href="/packing" label="packning" />
+          <DesktopMenuItem href="/packning" label="packning" />
           <DesktopMenuItem href="/studenthalsa" label="studenthälsa" />
           <DesktopMenuItem href="/checklista" label="checklista" />
         </DesktopMenu>

@@ -47,6 +47,10 @@ export default class MyDocument extends Document<any> {
             href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
