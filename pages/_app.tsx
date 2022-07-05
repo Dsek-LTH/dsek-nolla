@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import TopBar from '../components/TopBar';
-import HamburgerMenu from '../components/HamburgerMenu';
+import TopBar from '../components/Menu/TopBar';
+import HamburgerMenu from '../components/Menu/HamburgerMenu';
 import { MobileOnly } from '../components/components';
 import styled from 'styled-components';
 import { DESKTOP_MQ } from '../src/constants';

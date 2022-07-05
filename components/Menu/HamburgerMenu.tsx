@@ -48,6 +48,11 @@ export default function HamburgerMenu() {
           studenthälsa
         </a>
       </Link>
+      <Link href="/checklista">
+        <a id="checklista" className="menu-item bm-item" onClick={closeSideBar}>
+          checklista
+        </a>
+      </Link>
     </Menu>
   );
 }

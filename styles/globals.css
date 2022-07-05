@@ -16,7 +16,6 @@ h1 {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -88,6 +87,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 25px;
   margin-bottom: 1rem;
   display: inline-block;
+  text-decoration: none;
 }
 
 /* Styling of overlay */

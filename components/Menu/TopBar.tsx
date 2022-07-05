@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { DESKTOP_MQ } from '../src/constants';
-import DsekIcon from './icons/DsekIcon';
+import { DESKTOP_MQ } from '../../src/constants';
+import DsekIcon from '../icons/DsekIcon';
+import DesktopMenuItem from './DesktopMenuItem';
 
 const Container = styled.div`
   display: flex;
@@ -22,8 +23,11 @@ const DesktopMenu = styled.div`
   ${DESKTOP_MQ} {
     display: flex;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     justify-content: space-around;
+  }
+  a {
+    text-decoration: none;
   }
 `;
 
@@ -39,24 +43,13 @@ export default function MobileBar() {
           </a>
         </Link>
         <DesktopMenu>
-          <MenuItem>
-            <Link href="/">start</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/schema">schema&&karta</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/boende">boende</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/sektionen">sektionen</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/packing">packning</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="/studenthalsa">studenthälsa</Link>
-          </MenuItem>
+          <DesktopMenuItem href="/" label="start" />
+          <DesktopMenuItem href="/schema" label="schema&&karta" />
+          <DesktopMenuItem href="/boende" label="boende" />
+          <DesktopMenuItem href="/sektionen" label="sektionen" />
+          <DesktopMenuItem href="/packing" label="packning" />
+          <DesktopMenuItem href="/studenthalsa" label="studenthälsa" />
+          <DesktopMenuItem href="/checklista" label="checklista" />
         </DesktopMenu>
       </Container>
     </>
