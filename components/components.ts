@@ -10,6 +10,7 @@ export const DesktopOnly = styled.div`
 `;
 
 export const MobileOnly = styled.div`
+  width: 100%;
   display: block;
   ${DESKTOP_MQ} {
     display: none;

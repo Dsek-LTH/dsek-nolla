@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import styled from 'styled-components';
-import { DesktopOnly } from '../components/components';
+import { DesktopOnly, MobileOnly } from '../components/components';
 import ConsoleEffect from '../components/ConsoleEffect';
 import { DESKTOP_MQ } from '../src/constants';
 
@@ -20,7 +20,7 @@ const Paragraph = styled.p`
 const Logos = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 
 const Home: NextPage = () => {
@@ -50,6 +50,23 @@ const Home: NextPage = () => {
           />
         </Logos>
       </DesktopOnly>
+      <MobileOnly>
+        <Logos>
+          <Image
+            height={118}
+            width={118}
+            src="/images/d_logo.png"
+            alt="Logotyp D-sektionen"
+          />
+          <Image
+            height={118}
+            width={118}
+            src="/images/c_logo.png"
+            alt="C logotyp"
+          />
+        </Logos>
+      </MobileOnly>
+      <p />
       <ConsoleEffect Tag="h1" string="kåren" />
       <Paragraph>
         Alla studenter på LTH är medlemmar i Teknologkåren vid Lunds tekniska
@@ -62,14 +79,12 @@ const Home: NextPage = () => {
         från studierna för att helhjärtat arbeta för Teknologkåren. Du kan läsa
         mer på kårens hemsida.
       </Paragraph>
-      <DesktopOnly>
-        <Image
-          height={250}
-          width={1047}
-          src="/images/teknologkaren.png"
-          alt="Teknologkårens logotyp"
-        />
-      </DesktopOnly>
+      <Image
+        height={250}
+        width={1047}
+        src="/images/teknologkaren.png"
+        alt="Teknologkårens logotyp"
+      />
     </Main>
   );
 };

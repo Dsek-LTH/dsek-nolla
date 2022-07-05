@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { DESKTOP_MQ } from '../src/constants';
 
@@ -13,15 +15,21 @@ const DigitsStyle = styled.p`
   overflow: hidden;
   pointer-events: none;
   ${DESKTOP_MQ} {
-    max-height: 1250px;
     max-width: 25rem;
     margin: 6rem 1rem;
   }
 `;
 
 export default function BackgroundDigits() {
+  const router = useRouter();
+  const [bodyHeight, setBodyHeight] = useState(500);
+
+  useEffect(() => {
+    setBodyHeight(document.body.clientHeight - 200);
+  }, [router.asPath]);
+
   return (
-    <DigitsStyle>
+    <DigitsStyle style={{ maxHeight: bodyHeight }}>
       01000111011100100110000101110100 01110101101001 0111001100100001
       0010000001000100 011101001000000110100001101001 0111010001110100
       0110000101100100 0110010100100000 0110010101110100 01110100

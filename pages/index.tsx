@@ -7,8 +7,8 @@ import Copy from '../components/Home/Copy';
 
 const Main = styled.main`
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 `;
 
 const Home: NextPage = () => {
