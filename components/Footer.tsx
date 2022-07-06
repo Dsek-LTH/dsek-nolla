@@ -21,6 +21,8 @@ const Container = styled.div`
 const ElectionInfo = styled.p`
   ${DESKTOP_MQ} {
     margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   max-width: 39.5rem;
 `;

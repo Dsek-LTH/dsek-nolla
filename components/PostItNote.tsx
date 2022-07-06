@@ -4,6 +4,8 @@ import { COLOR } from '../src/constants';
 const Container = styled.div`
   position: relative;
   font-family: 'Ubuntu Mono';
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Tape = styled.img`
@@ -15,11 +17,15 @@ const Tape = styled.img`
 `;
 
 const Paper = styled.div`
-  min-width: 19rem;
-  max-width: 19rem;
-  min-height: 19rem;
-  max-width: 19rem;
+  min-width: 20rem;
+  max-width: 20rem;
+  min-height: 20rem;
+  max-height: 20rem;
   display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 20px 40px 40px 10px rgba(13, 13, 13, 0.3);
 `;
 
 export default function PostItNote({

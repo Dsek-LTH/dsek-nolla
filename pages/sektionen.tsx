@@ -7,7 +7,6 @@ import { DESKTOP_MQ } from '../src/constants';
 
 const Main = styled.main`
   display: flex;
-  align-items: center;
   flex-direction: column;
 `;
 
@@ -80,7 +79,7 @@ const Home: NextPage = () => {
         mer på kårens hemsida.
       </Paragraph>
       <Image
-        height={250}
+        height={300}
         width={1047}
         src="/images/teknologkaren.png"
         alt="Teknologkårens logotyp"

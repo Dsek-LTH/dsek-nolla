@@ -1,13 +1,17 @@
-import Typewriter from 'typewriter-effect';
+import Typewriter, { Options } from 'typewriter-effect';
+
+const DEFAULT_OPTIONS: Options = { delay: 40 };
 
 export default function ConsoleEffect({
   Tag,
   string,
   noCursor,
+  options,
 }: {
   Tag: keyof JSX.IntrinsicElements;
   string: string;
   noCursor?: boolean;
+  options?: Partial<Options> | undefined;
 }) {
   return (
     <Tag style={{ display: 'flex' }}>
@@ -16,6 +20,7 @@ export default function ConsoleEffect({
         onInit={(typewriter) => {
           typewriter.typeString(string).start();
         }}
+        options={options || DEFAULT_OPTIONS}
       />
     </Tag>
   );
