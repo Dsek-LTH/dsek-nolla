@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styled from 'styled-components';
 import { DESKTOP_MQ } from '../../src/constants';
 
@@ -18,11 +17,12 @@ const ScalingParagraph = styled.p`
 const ImageCopyContainer = styled.div`
   display: flex;
 `;
-const ImageContainer = styled.div`
+
+const VolleybollTeam = styled.img`
   display: none;
   ${DESKTOP_MQ} {
-    min-width: 27rem;
     display: block;
+    min-width: 27rem;
   }
 `;
 
@@ -43,14 +43,7 @@ export default function Copy() {
         du ska stormtrivas!
       </ScalingParagraph>
       <ImageCopyContainer>
-        <ImageContainer>
-          <Image
-            src="/images/volleyboll.png"
-            width="430"
-            height="680"
-            alt="Glad d-sekare"
-          />
-        </ImageContainer>
+        <VolleybollTeam src="/images/volleyboll.png" alt="Glada d-sekare" />
         <LowerCopy>
           <p>
             D-sektionen är en av elva sektioner på LTH och tillsammans utgör vi

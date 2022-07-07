@@ -22,6 +22,22 @@ const Logos = styled.div`
   justify-content: space-around;
 `;
 
+const Logo = styled.img`
+  width: 118px;
+  height: 118px;
+  ${DESKTOP_MQ} {
+    width: 341px;
+    height: 341px;
+  }
+`;
+
+const TechLogo = styled.img`
+  margin-top: 1rem;
+  ${DESKTOP_MQ} {
+    margin-top: 2rem;
+  }
+`;
+
 const Home: NextPage = () => {
   return (
     <Main>
@@ -33,38 +49,11 @@ const Home: NextPage = () => {
         Du kan läsa mer om vad D-sektionen gör för något på sektionens hemsida.
       </Paragraph>
 
-      <DesktopOnly>
-        <Logos>
-          <Image
-            height={341}
-            width={341}
-            src="/images/d_logo.png"
-            alt="Logotyp D-sektionen"
-          />
-          <Image
-            height={341}
-            width={341}
-            src="/images/c_logo.png"
-            alt="C logotyp"
-          />
-        </Logos>
-      </DesktopOnly>
-      <MobileOnly>
-        <Logos>
-          <Image
-            height={118}
-            width={118}
-            src="/images/d_logo.png"
-            alt="Logotyp D-sektionen"
-          />
-          <Image
-            height={118}
-            width={118}
-            src="/images/c_logo.png"
-            alt="C logotyp"
-          />
-        </Logos>
-      </MobileOnly>
+      <Logos>
+        <Logo src="/images/d_logo.png" alt="Logotyp D-sektionen" />
+        <Logo src="/images/c_logo.png" alt="C logotyp" />
+      </Logos>
+
       <p />
       <ConsoleEffect Tag="h1" string="kåren" />
       <Paragraph>
@@ -78,12 +67,7 @@ const Home: NextPage = () => {
         från studierna för att helhjärtat arbeta för Teknologkåren. Du kan läsa
         mer på kårens hemsida.
       </Paragraph>
-      <Image
-        height={300}
-        width={1047}
-        src="/images/teknologkaren.png"
-        alt="Teknologkårens logotyp"
-      />
+      <TechLogo src="/images/teknologkaren.png" alt="Teknologkårens logotyp" />
     </Main>
   );
 };

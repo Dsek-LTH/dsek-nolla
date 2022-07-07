@@ -20,10 +20,13 @@ const Copy = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
+const HappyZeros = styled.img`
   margin-top: 2rem;
+  width: 100%;
+  height: 100%;
   max-width: 55rem;
   margin-left: auto;
+  object-fit: contain;
 `;
 
 const Home: NextPage = () => {
@@ -55,14 +58,12 @@ const Home: NextPage = () => {
         <a href="https://tlth.se/klaga">https://tlth.se/klaga</a>
       </Copy>
 
-      <ImageContainer>
-        <Image
-          alt="Glada nollor"
-          src="/images/glada nollor.png"
-          width={1274}
-          height={910}
-        />
-      </ImageContainer>
+      <HappyZeros
+        alt="Glada nollor"
+        src="/images/glada_nollor.png"
+        width={1274}
+        height={910}
+      />
     </Main>
   );
 };
