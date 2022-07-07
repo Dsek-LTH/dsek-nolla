@@ -44,7 +44,7 @@ export default function CountDown() {
   return (
     <Container>
       <Label>
-        &gt; loading &quot;nollning&quot;... {daysUntilNollning.toFixed()} dagar
+        &gt; loading &quot;n0llning&quot;... {daysUntilNollning.toFixed()} dagar
         kvar...
       </Label>
       <LoadingBarBackground>
