@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <Main>
       <CountDown />
-      <ConsoleEffect Tag="h1" string="hejsan nollan!" />
+      <ConsoleEffect Tag="h1" string="hejsan n0llan!" />
       <Copy />
       <FAQ />
     </Main>
