@@ -96,12 +96,13 @@ const Home: NextPage = () => {
             <li>AF-Bostäder</li>
             <li>Studentlund - Nationer</li>
             <li>Michael Hansens Kollegium</li>
+            <li>Privat hyresvärd</li>
+            <li>Bopoolen</li>
           </ul>
           Facebook-grupper. Exempelvis:
           <ul>
             <li>Kollektiv i Lund</li>
-            <li>Privat hyresvärd</li>
-            <li>Bopoolen</li>
+            <li>Lägenheter i Lund</li>
           </ul>
         </Copy>
         <RouterContainer>
