@@ -61,8 +61,9 @@ export default function Copy() {
             andra n0llor som äldre teknologer. N0llningen är en intensiv period
             med aktiviteter varje dag. Man väljer själv vilka event man vill gå
             på och hur mycket man vill delta. N0llningen brukar vara väldigt
-            uppskattad så vi hoppas att du vill vara med! N0llningen börjar den
-            23:e augusti varav uppropet sker kl 15:15 i Kårhuset vid LTH.
+            uppskattad så vi hoppas att du vill vara med! N0llningen börjar 
+            måndagen den 22:a augusti varav uppropet sker kl 15:15 i Kårhuset 
+            vid LTH.
           </p>
           <p>
             Veckan innan n0llningen start kommer du bli kontaktad av din phadder
