@@ -89,7 +89,7 @@ export default function Example() {
             <AccordionItemPanel>
               <p>
                 En n0lla är oftast en förstaårsstudent. Denna student tas hand
-                om av phaddrarna som a11tid ser till att n0llan har det
+                om av phaddrarna som alltid ser till att n0llan har det
                 trevligt! Som n0lla får man gå på massvis av roliga event och
                 fester samt bekanta sig med sina nya kursare. N0lla är man fram
                 till n0llegasquen (n0llningens avslutningsfest) då man upphöjs
